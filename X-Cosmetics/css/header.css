@@ -1,0 +1,375 @@
+/* БАЗОВЫЕ НАСТРОЙКИ  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    -webkit-transition: 0.7s; /*плавный возврат после hover*/
+}
+nav:hover{
+    background-color: rgb(152, 166, 180);
+    transition: 0.5s;
+    color: black;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    position: relative;
+    margin: 0 5px 0 5px;
+}
+nav ul li:hover a{
+    color: black;
+    transition: 1.1s;
+}
+header{
+    width: 100%;
+    height: 900px;
+    background: url("https://ru.louisvuitton.com/images/is/image/WOMEN_EDITORIALISATION_OCTOBRE_031_LVCOM_2048x1152_DI3.jpg?wid=2400") center / cover;
+    position: relative;
+    display: block;
+    object-fit: cover;
+}
+
+.flex ul{
+    margin-right: 25px;
+}
+.flex ul li{
+    float: left;
+}
+.flex ul li a{
+    margin: 25px 0 0 0;
+    font-size: 20px;
+    color: white;
+    list-style-type: none;
+    display: block;
+}
+/*ГОРИЗОНТАЛЬНОЕ МЕНЮ*/
+.menu ul{
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu li{
+    margin: 12px 17px;
+}
+/* ЗАГОЛОВОК */
+ h2,h3{
+    width: 60%;
+    top: 20%;
+    left: 20%;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+h4{
+    width: 60%;
+    top: 54%;
+    left: 20%;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+/*МЕНЮ НИЖЕ ЗАГОЛОВКА*/
+.header_lower {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(15px);
+    top: 500px;
+    margin: 0 660px 0 660px;
+    right: 1px;
+    border-radius: 30px;
+    background-color: rgba(25,17,11,.2);
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid white;
+}
+.header_lower a{
+    color: white;
+    font-size: 13px;
+    padding: 10px 30px 10px 30px;
+}
+.header_lower a:hover{
+    color: rgb(152, 166, 180);
+}
+/*КНОПКА РЕГЕСТРАЦИИ И МЕСТО НАШЕГО РАСПОЛОЖЕНИЯ*/
+.registration li {
+    list-style-type: none;
+}
+.registration ul li a{
+    padding: 0 0 0 6px;
+    margin: 10px 0 0 0;
+}
+
+/*МЕДИА-ЗАПРОСЫ*/
+@media screen and (max-width: 1440px){
+    header .flex {
+        top: -10px;
+        margin: 5px 10px 10px 0;
+        width: 100%;
+    }
+    header nav ul{
+        padding-left: 0;
+    }
+    header .flex ul li {
+        padding: 0 0 0 0;
+    }
+    header .flex ul li a {
+        font-size: 22px;
+    }
+    .header_lower {
+        top: 490px;
+        margin: 0 610px 610px;
+    }
+    .header_lower a{
+        font-size: 14px;
+        padding: 10px 10px 10px 10px;
+        letter-spacing: 2px;
+    }
+    .menu ul li{
+        padding: 0 20px 0 20px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1439px)/* DESKTOP */
+{
+    header .flex {
+        top: -10px;
+        margin: 5px 10px 10px 0;
+        width: 100%;
+    }
+    header nav ul{
+        padding-left: 0;
+    }
+    header .flex ul li {
+        padding: 0;
+    }
+    header .flex ul li a {
+        font-size: 18px;
+    }
+    .header_lower {
+        top: 490px;
+        margin: 0 500px 500px;
+    }
+    .header_lower a{
+        font-size: 14px;
+        padding: 10px 10px 10px 10px;
+        letter-spacing: 2px;
+    }
+    .menu ul li{
+        padding: 0 20px 0 20px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    header .flex {
+        top: -10px;
+        padding: 0 30px 0 30px;
+        width: 100%;
+    }
+    header nav ul {
+        padding-left: 0;
+    }
+    header .flex ul li a {
+        font-size: 18px;
+    }
+    .header_lower {
+        margin: 0 410px 0 410px;
+    }
+    .header_lower a {
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+        letter-spacing: 2px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    header .flex {
+        top: -3px;
+        padding: 0 1px 0 1px;
+        width: 100%;
+    }
+    header nav ul {
+        padding-left: 0;
+    }
+    .menu ul li {
+        margin: 0 10px 0 10px;
+        padding: 0 2px 0 2px;
+    }
+    header .flex ul li a {
+        font-size: 14px;
+    }
+    .header_lower {
+        margin: 0 285px 0 285px;
+        padding: 5px 10px 5px 10px;
+    }
+    .header_lower a {
+        font-size: 12px;
+        padding: 5px;
+        letter-spacing: 2px;
+    }
+    header h2 {
+        font-size: 20px;
+    }
+    header h3 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 480px) /* MOBILE */ {
+    header{
+        height: 600px;
+    }
+    header .flex {
+        top: -3px;
+        padding: 0 10px 0 10px;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .bi-person-add, .bi-bi-geo-alt {
+        padding: 2px 2px 2px 2px;
+    }
+    .menu ul li {
+        margin: 0 10px 0 0;
+    }
+    header nav ul {
+        margin: 5px;
+        padding: 0;
+    }
+    header .flex ul li a {
+        font-size: 10px;
+        margin: 10px 0 0 0;
+    }
+    .header_lower {
+        top: 340px;
+        margin: 0 130px 0 130px;
+    }
+    .header_lower a {
+        font-size: 12px;
+        padding: 10px 20px 10px 20px;
+        letter-spacing: 1px;
+    }
+    header h2 {
+        font-size: 15px;
+        top: 170px;
+    }
+    header h3 {
+        font-size: 15px;
+        top: 170px;
+    }
+    header h4 {
+        font-size: 20px;
+        top: 340px;
+    }
+}
+/*@media screen and (max-width: 320px) {
+/*    header {
+/*        height: 600px;
+/*    }
+/*    header .flex {
+/*        top: -3px;
+/*        padding: 0 10px 0 10px;
+/*        width: 100%;
+/*        flex-wrap: nowrap;
+/*    }
+/*    .bi-person-add, .bi-bi-geo-alt {
+/*        padding: 2px 2px 2px 2px;
+/*    }
+/*    .menu ul li {
+/*        margin: 0 10px 0 0;
+/*    }
+/*    header nav ul {
+/*        margin: 5px;
+/*        padding: 0;
+/*    }
+/*    header .flex ul li a {
+/*        font-size: 10px;
+/*        margin: 10px 0 0 0;
+/*    }
+/*    .header_lower {
+/*        top: 340px;
+/*        margin: 0 110px 0 110px;
+/*    }
+/*    .header_lower a {
+/*        font-size: 12px;
+/*        padding: 10px 20px 10px 20px;
+/*    }
+/*    header h2 {
+/*        font-size: 15px;
+/*        top: 170px;
+/*    }
+/*    header h3 {
+/*        font-size: 15px;
+/*        top: 170px;
+/*    }
+/*    header h4 {
+/*        font-size: 20px;
+/*        top: 340px;
+/*    }
+/*}*/
+@media screen and (max-width: 320px) {
+    header{
+        height: 500px;
+    }
+    header .flex {
+        top: -3px;
+        padding: 0;
+        width: 100%;
+    }
+    .bi-person-add, .bi-bi-geo-alt {
+        padding: 6px 6px 6px 6px;
+    }
+    .menu ul li {
+        margin: 0 10px 0 0;
+    }
+    header nav ul {
+        margin: 5px;
+        padding: 0;
+    }
+    header .flex ul li a {
+        font-size: 10px;
+        margin: 10px 0 0 0;
+    }
+    .header_lower {
+        top: 260px;
+        margin: 0 105px 0 105px;
+    }
+    .header_lower a {
+        font-size: 10px;
+        padding: 5px 10px 5px 10px;
+        letter-spacing: 1px;
+    }
+    header h2 {
+        font-size: 12px;
+        top: 170px;
+    }
+    header h3 {
+        font-size: 12px;
+        top: 170px;
+    }
+    header h4 {
+        font-size: 12px;
+        top: 260px;
+    }
+    /*.full-screen_link a {*/
+    /*    font-size: 12px; !important;*/
+    /*    letter-spacing: 5px; !important;*/
+    /*}*/
+
+}
